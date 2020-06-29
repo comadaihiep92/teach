@@ -73,7 +73,7 @@ const Home: React.FC = () => {
                 <IonText className="home__title">School Documents</IonText>
               </IonList>
             </IonRouterLink>
-            <IonRouterLink href="#" className="home__link">
+            <IonRouterLink href="/childdailyinfo" className="home__link">
               <IonList className="home__item">
                 <IonImg
                   className="home__image"

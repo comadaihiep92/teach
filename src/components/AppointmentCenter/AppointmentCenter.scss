@@ -1,12 +1,16 @@
 // appointment center
 
 .appointment {
-  &__toolbar {
-    --background: url("../../images/bg-header.png") no-repeat center center;
+  &__header {
+    background: url(/static/media/bg-header.a1c9d5a8.png) no-repeat center
+      center;
     width: 100%;
-    height: 100%;
+    height: 56px;
     background-size: cover;
     padding: 0 10px;
+  }
+  &__toolbar {
+    --background: unset;
   }
   &__title-header {
     color: white;
@@ -19,6 +23,14 @@
   &__title {
     color: #262626;
     font-size: 20px;
+    font-weight: 500;
+  }
+  &__img {
+    background: url("../../images/bg-header.png") no-repeat center center;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    padding: 0 10px;
   }
   &__item {
     // width: 100%;
@@ -30,16 +42,17 @@
   &__sub-item {
     width: 100%;
     overflow: scroll;
-    margin: 12px 0;
+    margin: 10px 0;
     border-bottom: 2px solid #cccccc;
   }
   &__reminder {
+    font-size: 18px;
     color: #4c4c4c;
   }
   &__date {
     margin-left: 10px;
     color: #929292;
-    font-size: 13px;
+    font-size: 16px;
   }
   &__times {
     display: flex;
@@ -51,7 +64,8 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    overflow: scroll;
+    flex-wrap: wrap;
+    // overflow: scroll;
     margin-bottom: 10px;
   }
   &__item-image {
@@ -60,7 +74,8 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin: 0 10px;
+    // margin: 0 5px;
+    margin-right: 10px;
   }
   &__name {
     padding-top: 10px;
@@ -69,7 +84,7 @@
   }
 }
 .img {
-  width: 80px;
+  width: 50px;
   display: block;
   border-radius: 50%;
 }

@@ -1,0 +1,85 @@
+// child daily ìno center
+.childDaily {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 10px;
+  &__list {
+    width: 100%;
+  }
+  &__title {
+    color: #4f4f4f;
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
+  &__radio {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  &__radio-item {
+    width: 23%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid #d7d7d7;
+    border-radius: 10px;
+    padding: 20px 0;
+  }
+  &__label {
+    font-size: 14px;
+    color: #9c9c9c;
+    font-weight: 400;
+    text-align: center;
+  }
+  &__rdo {
+    position: absolute;
+    opacity: 0;
+  }
+
+  &__comment {
+    font-size: 14px;
+    color: #a3a3a3;
+    border: 1px solid #d7d7d7;
+    height: 80px;
+    border-radius: 10px;
+  }
+
+  &__radio-height {
+    height: 95px;
+    padding: 5px;
+    box-sizing: border-box;
+  }
+
+  &__list-day {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__input {
+    border: 1px solid #d7d7d7;
+    border-radius: 5px;
+    color: #8b8b8b;
+    font-size: 14px;
+  }
+}
+
+.img--fruit {
+  margin-bottom: 5px;
+}
+
+.list-day__item {
+  width: 45%;
+  padding: 10px;
+  border: 1px solid #d7d7d7;
+  border-radius: 5px;
+  color: #4f4f4f;
+  font-size: 14px;
+}

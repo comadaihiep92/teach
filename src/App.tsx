@@ -4,6 +4,7 @@ import { IonApp, IonRouterOutlet } from "@ionic/react";
 import { IonReactRouter } from "@ionic/react-router";
 import Home from "./pages/Home";
 import AppointmentCenter from "./components/AppointmentCenter/AppointmentCenter";
+import ChildDailyInfo from "./components/ChildDailyInfo/ChildDailyInfo";
 
 /* Core CSS required for Ionic components to work properly */
 import "@ionic/react/css/core.css";
@@ -22,7 +23,7 @@ import "@ionic/react/css/flex-utils.css";
 import "@ionic/react/css/display.css";
 
 /* Theme variables */
-import "./theme/variables.css";
+import "./theme/variables.scss";
 
 const App: React.FC = () => (
   <IonApp>
@@ -35,6 +36,7 @@ const App: React.FC = () => (
           component={AppointmentCenter}
           exact={true}
         />
+        <Route path="/childdailyinfo" component={ChildDailyInfo} exact={true} />
       </IonRouterOutlet>
     </IonReactRouter>
   </IonApp>

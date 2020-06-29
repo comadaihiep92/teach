@@ -42,6 +42,7 @@ const AppointmentCenter: React.FC = () => {
           <IonText className="appointment__title">
             Parents are sure to be present
           </IonText>
+
           <IonList className="appointment__item ion-no-padding">
             <IonList className="appointment__sub-item">
               <IonText className="appointment__reminder">
