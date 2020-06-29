@@ -43,7 +43,7 @@ const Home: React.FC = () => {
           </IonHeader>
 
           <IonList className="home__list">
-            <IonRouterLink href="#" className="home__link">
+            <IonRouterLink href="/mypicture" className="home__link">
               <IonList className="home__item">
                 <IonImg
                   className="home__image"
@@ -53,7 +53,7 @@ const Home: React.FC = () => {
                 <IonText className="home__title">My Pictures</IonText>
               </IonList>
             </IonRouterLink>
-            <IonRouterLink href="#" className="home__link">
+            <IonRouterLink href="/messagecenter" className="home__link">
               <IonList className="home__item">
                 <IonImg
                   className="home__image"

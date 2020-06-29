@@ -76,6 +76,38 @@ http://ionicframework.com/docs/theming/ */
   --ion-color-light-tint: #f5f6f9;
 }
 
+@font-face {
+  font-family: "Century Gothic Italic";
+  src: url("../font/GOTHICI.TTF");
+  font-weight: 200;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Century Gothic Regular";
+  src: url("../font/GOTHIC.TTF");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Century Gothic Bold";
+  src: url("../font/GOTHICB.TTF");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Century Gothic Bold Italic";
+  src: url("../font/GOTHICBI.TTF");
+  font-weight: 800;
+  font-style: italic;
+}
+
+:root,
+:root[mode="ios"],
+:root[mode="md"] {
+  --ion-font-family: "Century Gothic Regular", sans-serif !important;
+  font-family: "Century Gothic Regular", sans-serif !important;
+}
+
 @media (prefers-color-scheme: dark) {
   /*
    * Dark Colors
@@ -234,10 +266,29 @@ http://ionicframework.com/docs/theming/ */
     color: white;
     text-transform: initial;
   }
+  &--cancel {
+    --background: unset;
+    --border: unset;
+    --box-shadow: none;
+    height: 40px;
+  }
 }
 
 .label {
   &--blue {
     color: #187bad !important;
+  }
+}
+
+.color {
+  &--blue {
+    color: #187bad;
+  }
+}
+
+.icon {
+  &--cloud,
+  &--cancel {
+    max-width: 40px;
   }
 }
