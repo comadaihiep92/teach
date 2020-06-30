@@ -35,7 +35,7 @@ const PaintClassroom: React.FC = () => {
       <IonHeader className="ion-no-border appointment__header">
         <IonToolbar className="appointment__toolbar">
           <IonButtons slot="start">
-            <Link to="/">
+            <Link to="/appointmentcenter">
               <IonImg className="icon icon-back" src={iconBack} alt="" />
             </Link>
           </IonButtons>
