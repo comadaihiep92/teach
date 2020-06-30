@@ -21,6 +21,7 @@ import {
   IonFab,
   IonFabButton,
   IonRadio,
+  IonRadioGroup,
 } from "@ionic/react";
 
 import "./AppointmentCenter.scss";
@@ -92,16 +93,18 @@ const AppointmentCenter: React.FC = () => {
                 className="childDaily__comment"
                 placeholder="Write Comment"
               ></IonTextarea>
-              <IonList className="yesno">
-                <IonItem lines="none" className="yesno__item">
-                  <IonLabel className="yesno__text">Yes</IonLabel>
-                  <IonRadio className="yesno__input"></IonRadio>
-                </IonItem>
-                <IonItem lines="none" className="yesno__item">
-                  <IonLabel className="yesno__text">No</IonLabel>
-                  <IonRadio className="yesno__input"></IonRadio>
-                </IonItem>
-              </IonList>
+              <IonRadioGroup className="yesno-group">
+                <IonList className="yesno">
+                  <IonItem lines="none" className="yesno__item ion-no-padding">
+                    <IonLabel className="yesno__text">Yes</IonLabel>
+                    <IonRadio className="yesno__input" value="yes" />
+                  </IonItem>
+                  <IonItem lines="none" className="yesno__item ion-no-padding">
+                    <IonLabel className="yesno__text">No</IonLabel>
+                    <IonRadio className="yesno__input" value="No" />
+                  </IonItem>
+                </IonList>
+              </IonRadioGroup>
             </IonList>
             <IonFab
               className="modal__close"

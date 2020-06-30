@@ -108,7 +108,7 @@ const ChildDailyInfo: React.FC = () => {
               </IonSelect>
             </IonList>
             <IonRadioGroup>
-              <IonList className="childDaily__radio">
+              <IonList className="childDaily__radio childDaily__radio--big">
                 <IonList className="childDaily__radio-item childDaily__radio-height">
                   <IonImg
                     className="img img--fruit"

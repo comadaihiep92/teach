@@ -195,8 +195,14 @@
   }
   &__input {
     opacity: 0;
+    // position: absolute;
   }
   &__text {
-    padding-left: 15px;
+    position: absolute;
+    margin: 0 auto;
+    left: 40%;
   }
+}
+.yesno-group {
+  width: 100%;
 }
