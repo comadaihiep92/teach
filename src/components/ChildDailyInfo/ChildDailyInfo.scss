@@ -49,6 +49,9 @@
     border: 1px solid #d7d7d7;
     height: 80px;
     border-radius: 10px;
+    & .native-textarea {
+      height: 130px;
+    }
   }
 
   &__radio-height {

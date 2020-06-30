@@ -7,6 +7,7 @@ import AppointmentCenter from "./components/AppointmentCenter/AppointmentCenter"
 import ChildDailyInfo from "./components/ChildDailyInfo/ChildDailyInfo";
 import MyPicture from "./components/MyPicture/MyPicture";
 import MessageCenter from "./components/MessageCenter/MessageCenter";
+import PaintClassroom from "./components/PaintClassroom/PaintClassroom";
 
 /* Core CSS required for Ionic components to work properly */
 import "@ionic/react/css/core.css";
@@ -41,6 +42,7 @@ const App: React.FC = () => (
         <Route path="/childdailyinfo" component={ChildDailyInfo} exact={true} />
         <Route path="/mypicture" component={MyPicture} exact={true} />
         <Route path="/messagecenter" component={MessageCenter} exact={true} />
+        <Route path="/paintclassroom" component={PaintClassroom} exact={true} />
       </IonRouterOutlet>
     </IonReactRouter>
   </IonApp>
