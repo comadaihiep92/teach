@@ -56,22 +56,46 @@ const ChildDailyInfo: React.FC = () => {
             <IonText className="childDaily__title">How often to eat</IonText>
             <IonRadioGroup>
               <IonList className="childDaily__radio">
-                <IonList className="childDaily__radio-item">
+                <IonItem
+                  lines="none"
+                  className="childDaily__radio-item ion-no-padding"
+                >
                   <IonLabel className="childDaily__label">0 Times</IonLabel>
-                  <IonRadio className="childDaily__rdo"></IonRadio>
-                </IonList>
-                <IonList className="childDaily__radio-item">
+                  <IonRadio
+                    className="childDaily__rdo"
+                    value="0 Times"
+                  ></IonRadio>
+                </IonItem>
+                <IonItem
+                  lines="none"
+                  className="childDaily__radio-item ion-no-padding"
+                >
                   <IonLabel className="childDaily__label">1 Times</IonLabel>
-                  <IonRadio className="childDaily__rdo"></IonRadio>
-                </IonList>
-                <IonList className="childDaily__radio-item">
+                  <IonRadio
+                    className="childDaily__rdo"
+                    value="1 Times"
+                  ></IonRadio>
+                </IonItem>
+                <IonItem
+                  lines="none"
+                  className="childDaily__radio-item ion-no-padding"
+                >
                   <IonLabel className="childDaily__label">2 Times</IonLabel>
-                  <IonRadio className="childDaily__rdo"></IonRadio>
-                </IonList>
-                <IonList className="childDaily__radio-item">
+                  <IonRadio
+                    className="childDaily__rdo"
+                    value="2 Times"
+                  ></IonRadio>
+                </IonItem>
+                <IonItem
+                  lines="none"
+                  className="childDaily__radio-item ion-no-padding"
+                >
                   <IonLabel className="childDaily__label">3 Times</IonLabel>
-                  <IonRadio className="childDaily__rdo"></IonRadio>
-                </IonList>
+                  <IonRadio
+                    className="childDaily__rdo"
+                    value="3 Times"
+                  ></IonRadio>
+                </IonItem>
               </IonList>
             </IonRadioGroup>
             <IonTextarea
