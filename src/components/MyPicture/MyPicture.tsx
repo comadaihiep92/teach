@@ -60,11 +60,11 @@ const MyPicture: React.FC = () => {
               </IonRouterLink>
             </IonText>
           </IonList>
-          <IonList className="mypicture__list">
-            <IonList className="mypicture__item">
+          <IonList className="mypicture__list ion-no-padding">
+            <IonList className="mypicture__item ion-no-padding">
               <IonImg className="icon icon--cloud" src={iconCloud} alt="" />
               <IonList className="mypicture__width">
-                <IonList className="mypicture__list-text">
+                <IonList className="mypicture__list-text ion-no-padding">
                   <IonText className="mypicture__text">
                     Name of file.jpg
                   </IonText>
@@ -79,10 +79,10 @@ const MyPicture: React.FC = () => {
                 <IonImg className="icon icon--cancel" src={iconCancel} alt="" />
               </IonButton>
             </IonList>
-            <IonList className="mypicture__item">
+            <IonList className="mypicture__item ion-no-padding">
               <IonImg className="icon icon--cloud" src={iconCloud} alt="" />
               <IonList className="mypicture__width">
-                <IonList className="mypicture__list-text">
+                <IonList className="mypicture__list-text ion-no-padding">
                   <IonText className="mypicture__text">
                     Name of file.jpg
                   </IonText>
@@ -97,10 +97,10 @@ const MyPicture: React.FC = () => {
                 <IonImg className="icon icon--cancel" src={iconCancel} alt="" />
               </IonButton>
             </IonList>
-            <IonList className="mypicture__item">
+            <IonList className="mypicture__item ion-no-padding">
               <IonImg className="icon icon--cloud" src={iconCloud} alt="" />
               <IonList className="mypicture__width">
-                <IonList className="mypicture__list-text">
+                <IonList className="mypicture__list-text ion-no-padding">
                   <IonText className="mypicture__text">
                     Name of file.jpg
                   </IonText>
@@ -115,10 +115,10 @@ const MyPicture: React.FC = () => {
                 <IonImg className="icon icon--cancel" src={iconCancel} alt="" />
               </IonButton>
             </IonList>
-            <IonList className="mypicture__item">
+            <IonList className="mypicture__item ion-no-padding">
               <IonImg className="icon icon--cloud" src={iconCloud} alt="" />
               <IonList className="mypicture__width">
-                <IonList className="mypicture__list-text">
+                <IonList className="mypicture__list-text ion-no-padding">
                   <IonText className="mypicture__text">
                     Name of file.jpg
                   </IonText>

@@ -55,7 +55,7 @@ const ChildDailyInfo: React.FC = () => {
           <IonList className="childDaily__list">
             <IonText className="childDaily__title">How often to eat</IonText>
             <IonRadioGroup>
-              <IonList className="childDaily__radio">
+              <IonList className="childDaily__radio ion-no-padding">
                 <IonItem
                   lines="none"
                   className="childDaily__radio-item ion-no-padding"
@@ -103,9 +103,9 @@ const ChildDailyInfo: React.FC = () => {
               placeholder="Write Comment"
             ></IonTextarea>
           </IonList>
-          <IonList className="childDaily__list">
+          <IonList className="childDaily__list ion-no-padding">
             <IonText className="childDaily__title">The menu of the day</IonText>
-            <IonList className="childDaily__list-day">
+            <IonList className="childDaily__list-day ion-no-padding">
               <IonSelect
                 className="list-day__item"
                 value={week}
@@ -132,7 +132,7 @@ const ChildDailyInfo: React.FC = () => {
               </IonSelect>
             </IonList>
             <IonRadioGroup>
-              <IonList className="childDaily__radio childDaily__radio--big">
+              <IonList className="childDaily__radio childDaily__radio--big ion-no-padding">
                 <IonList className="childDaily__radio-item childDaily__radio-height">
                   <IonImg
                     className="img img--fruit"
@@ -170,9 +170,9 @@ const ChildDailyInfo: React.FC = () => {
               placeholder="Write Comment"
             ></IonTextarea>
           </IonList>
-          <IonList className="childDaily__list">
+          <IonList className="childDaily__list ion-no-padding">
             <IonText className="childDaily__title">Nap time:</IonText>
-            <IonList className="childDaily__radio">
+            <IonList className="childDaily__radio ion-no-padding">
               <IonItem lines="none" className="childDaily__input">
                 <IonLabel position="floating" className="label label--blue">
                   Duration
@@ -198,10 +198,10 @@ const ChildDailyInfo: React.FC = () => {
               </IonItem>
             </IonList>
           </IonList>
-          <IonList className="childDaily__list">
+          <IonList className="childDaily__list ion-no-padding">
             <IonText className="childDaily__title">Bowel movement:</IonText>
             <IonRadioGroup>
-              <IonList className="childDaily__radio">
+              <IonList className="childDaily__radio ion-no-padding">
                 <IonList className="childDaily__radio-item">
                   <IonLabel className="childDaily__label">Yes</IonLabel>
                   <IonRadio className="childDaily__rdo" value="yes"></IonRadio>
@@ -222,10 +222,10 @@ const ChildDailyInfo: React.FC = () => {
               </IonList>
             </IonRadioGroup>
           </IonList>
-          <IonList className="childDaily__list">
+          <IonList className="childDaily__list ion-no-padding">
             <IonText className="childDaily__title">Record injuries:</IonText>
             <IonRadioGroup>
-              <IonList className="childDaily__radio">
+              <IonList className="childDaily__radio ion-no-padding">
                 <IonList className="childDaily__radio-item">
                   <IonLabel className="childDaily__label">Yes</IonLabel>
                   <IonRadio className="childDaily__rdo" value="yes"></IonRadio>

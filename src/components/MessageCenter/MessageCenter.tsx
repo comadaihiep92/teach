@@ -59,7 +59,7 @@ const MessageCenter: React.FC = () => {
               </IonRouterLink>
             </IonText>
           </IonList>
-          <IonList>
+          <IonList className="ion-no-padding">
             <IonText className="mypicture__title">
               Write a relevant message
             </IonText>

@@ -130,7 +130,7 @@ const AppointmentCenter: React.FC = () => {
                 <IonImg className="icon icon--clock" src={iconClock} alt="" />
                 <IonText className="appointment__date">Friday: at 4 pm</IonText>
               </IonList>
-              <IonList className="appointment__list-image">
+              <IonList className="appointment__list-image ion-no-padding">
                 <IonList className="appointment__item-image">
                   <IonButton
                     className="ion-no-padding appointment__button"
@@ -214,7 +214,7 @@ const AppointmentCenter: React.FC = () => {
                 <IonImg className="icon icon--clock" src={iconClock} alt="" />
                 <IonText className="appointment__date">Friday: at 4 pm</IonText>
               </IonList>
-              <IonList className="appointment__list-image">
+              <IonList className="appointment__list-image ion-no-padding ion-no-padding">
                 <IonList className="appointment__item-image">
                   <IonButton
                     className="ion-no-padding appointment__button"
@@ -298,7 +298,7 @@ const AppointmentCenter: React.FC = () => {
                 <IonImg className="icon icon--clock" src={iconClock} alt="" />
                 <IonText className="appointment__date">Friday: at 4 pm</IonText>
               </IonList>
-              <IonList className="appointment__list-image">
+              <IonList className="appointment__list-image ion-no-padding">
                 <IonList className="appointment__item-image">
                   <IonButton
                     className="ion-no-padding appointment__button"
@@ -382,7 +382,7 @@ const AppointmentCenter: React.FC = () => {
                 <IonImg className="icon icon--clock" src={iconClock} alt="" />
                 <IonText className="appointment__date">Friday: at 4 pm</IonText>
               </IonList>
-              <IonList className="appointment__list-image">
+              <IonList className="appointment__list-image ion-no-padding">
                 <IonList className="appointment__item-image">
                   <IonButton
                     className="ion-no-padding appointment__button"
