@@ -258,6 +258,41 @@ http://ionicframework.com/docs/theming/ */
   }
 }
 
+// .btn {
+//   font-size: 16px;
+//   &--send {
+//     --background: #187bad;
+//     width: 100%;
+//     color: white;
+//     text-transform: initial;
+//   }
+//   &--cancel {
+//     --background: unset;
+//     --border: unset;
+//     --box-shadow: none;
+//     height: 40px;
+//   }
+// }
+
+// .label {
+//   &--blue {
+//     color: #187bad !important;
+//   }
+// }
+
+// .color {
+//   &--blue {
+//     color: #187bad;
+//   }
+// }
+
+// .icon {
+//   &--cloud,
+//   &--cancel {
+//     max-width: 40px;
+//   }
+// }
+
 .btn {
   font-size: 16px;
   &--send {
@@ -272,11 +307,24 @@ http://ionicframework.com/docs/theming/ */
     --box-shadow: none;
     height: 40px;
   }
+  &--search {
+    --background: none;
+    --box-shadow: none;
+    margin: 0;
+  }
 }
 
 .label {
   &--blue {
     color: #187bad !important;
+    font-weight: 600;
+    // font-size: 15px !important;
+  }
+  &--top {
+    margin-top: 5px;
+  }
+  &--right {
+    margin-right: auto;
   }
 }
 
@@ -290,5 +338,15 @@ http://ionicframework.com/docs/theming/ */
   &--cloud,
   &--cancel {
     max-width: 40px;
+  }
+  &--search {
+    max-width: 20px;
+  }
+}
+
+.input {
+  &--small {
+    max-height: 38px;
+    height: 38px;
   }
 }
