@@ -1,5 +1,5 @@
 {
-  "appId": "io.ionic.starter",
+  "appId": "io.teach.app",
   "appName": "teacher",
   "bundledWebRuntime": false,
   "npmClient": "npm",
