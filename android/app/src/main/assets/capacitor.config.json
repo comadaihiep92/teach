@@ -1,6 +1,6 @@
 {
   "appId": "io.teach.app",
-  "appName": "teacher",
+  "appName": "teacher app",
   "bundledWebRuntime": false,
   "npmClient": "npm",
   "webDir": "build",

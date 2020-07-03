@@ -830,11 +830,13 @@ const ChildDailyInfo: React.FC = () => {
           </IonList>
           <IonList className="childDaily__list ion-no-padding">
             <IonText className="childDaily__title">Bowel movement:</IonText>
-            <IonRadioGroup
-              value={bowel}
-              onIonChange={(e) => setBowel(e.detail.value)}
-            >
-              <IonList className="childDaily__radio childDaily__radio-padding">
+
+            <IonList className="childDaily__radio childDaily__radio-padding">
+              <IonRadioGroup
+                className="childDaily__radiogr"
+                value={bowel}
+                onIonChange={(e) => setBowel(e.detail.value)}
+              >
                 <IonItem
                   lines="none"
                   className="childDaily__radio-item childDaily__radio-item-yes ion-no-padding"
@@ -893,8 +895,8 @@ const ChildDailyInfo: React.FC = () => {
                     </>
                   )}
                 </IonItem>
-
-                {/* <IonItem
+              </IonRadioGroup>
+              {/* <IonItem
                   lines="none"
                   className="childDaily__radio-item  childDaily__radio-item-yes label--right  ion-no-padding"
                 >
@@ -903,7 +905,7 @@ const ChildDailyInfo: React.FC = () => {
                   </IonLabel>
                 </IonItem> */}
 
-                {/* <IonItem
+              {/* <IonItem
                   lines="none"
                   className="childDaily__radio-item  childDaily__radio-item-yes  ion-no-padding"
                 >
@@ -917,32 +919,34 @@ const ChildDailyInfo: React.FC = () => {
                   </IonLabel>
                   <IonRadio className="childDaily__rdo" value="no"></IonRadio>
                 </IonItem> */}
-                <IonItem
-                  lines="none"
-                  className="childDaily__input ion-margin-start"
+              <IonItem
+                lines="none"
+                className="childDaily__input ion-margin-start"
+              >
+                <IonLabel
+                  position="floating"
+                  className="label label--blue label--top"
                 >
-                  <IonLabel
-                    position="floating"
-                    className="label label--blue label--top"
-                  >
-                    How many
-                  </IonLabel>
-                  <IonInput
-                    className="input input--small"
-                    type="number"
-                    value="3"
-                  ></IonInput>
-                </IonItem>
-              </IonList>
-            </IonRadioGroup>
+                  How many
+                </IonLabel>
+                <IonInput
+                  className="input input--small"
+                  type="number"
+                  value="3"
+                ></IonInput>
+              </IonItem>
+            </IonList>
+            {/* </IonRadioGroup> */}
           </IonList>
           <IonList className="childDaily__list ion-no-padding">
             <IonText className="childDaily__title">Record injuries:</IonText>
-            <IonRadioGroup
-              value={record}
-              onIonChange={(e) => setRecord(e.detail.value)}
-            >
-              <IonList className="childDaily__radio childDaily__radio-padding">
+
+            <IonList className="childDaily__radio childDaily__radio-padding">
+              <IonRadioGroup
+                className="childDaily__radiogr"
+                value={record}
+                onIonChange={(e) => setRecord(e.detail.value)}
+              >
                 <IonItem
                   lines="none"
                   className="childDaily__radio-item childDaily__radio-item-yes ion-no-padding"
@@ -1001,52 +1005,53 @@ const ChildDailyInfo: React.FC = () => {
                     </>
                   )}
                 </IonItem>
-                <IonItem
-                  lines="none"
-                  className="childDaily__input ion-margin-start"
+              </IonRadioGroup>
+              <IonItem
+                lines="none"
+                className="childDaily__input ion-margin-start"
+              >
+                <IonLabel
+                  position="floating"
+                  className="label label--blue label--top"
                 >
-                  <IonLabel
-                    position="floating"
-                    className="label label--blue label--top"
-                  >
-                    Where
-                  </IonLabel>
-                  <IonInput
-                    className="input input--small"
-                    placeholder="Write here"
-                    type="text"
-                    value="Twinky Finger"
-                  ></IonInput>
-                </IonItem>
+                  Where
+                </IonLabel>
+                <IonInput
+                  className="input input--small"
+                  placeholder="Write here"
+                  type="text"
+                  value="Twinky Finger"
+                ></IonInput>
+              </IonItem>
 
-                <IonItem
-                  lines="none"
-                  className="childDaily__input childDaily__input-width ion-margin-start"
+              <IonItem
+                lines="none"
+                className="childDaily__input childDaily__input-width ion-margin-start"
+              >
+                <IonLabel
+                  position="floating"
+                  className="label label--blue label--top"
                 >
-                  <IonLabel
-                    position="floating"
-                    className="label label--blue label--top"
-                  >
-                    When
-                  </IonLabel>
-                  {/* <IonInput
+                  When
+                </IonLabel>
+                {/* <IonInput
                     className="input input--small"
                     placeholder="Select"
                     type="text"
                     value="11:00 AM"
                   ></IonInput> */}
-                  <IonSelect
-                    className="childDaily__input-text input input--small childDaily__select"
-                    placeholder="Select"
-                    value="11:00 AM"
-                  >
-                    <IonSelectOption>10:00 AM</IonSelectOption>
-                    <IonSelectOption>11:00 AM</IonSelectOption>
-                    <IonSelectOption>12:00 AM</IonSelectOption>
-                  </IonSelect>
-                </IonItem>
-              </IonList>
-            </IonRadioGroup>
+                <IonSelect
+                  className="childDaily__input-text input input--small childDaily__select"
+                  placeholder="Select"
+                  value="11:00 AM"
+                >
+                  <IonSelectOption>10:00 AM</IonSelectOption>
+                  <IonSelectOption>11:00 AM</IonSelectOption>
+                  <IonSelectOption>12:00 AM</IonSelectOption>
+                </IonSelect>
+              </IonItem>
+            </IonList>
+            {/* </IonRadioGroup> */}
             <IonTextarea
               className="childDaily__comment"
               placeholder="Write Comment"

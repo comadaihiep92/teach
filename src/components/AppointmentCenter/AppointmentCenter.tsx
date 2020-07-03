@@ -116,7 +116,7 @@ const AppointmentCenter: React.FC = () => {
                 className="btn-modal btn-modal--close"
                 onClick={() => setShowModal(false)}
               >
-                <IonImg className="icon icon--close" src={iconClose} alt="X" />
+                <IonImg className="icon icon--close" src={iconClose} alt="" />
               </IonFabButton>
             </IonFab>
           </IonModal>
