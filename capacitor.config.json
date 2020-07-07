@@ -1,5 +1,5 @@
 {
-  "appId": "io.admin.app",
+  "appId": "io.teacher.app",
   "appName": "teacher app",
   "bundledWebRuntime": false,
   "npmClient": "npm",

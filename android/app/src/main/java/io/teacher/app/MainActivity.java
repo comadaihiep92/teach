@@ -1,4 +1,4 @@
-package io.admin.app;
+package io.teacher.app;
 
 import android.os.Bundle;
 
