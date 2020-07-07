@@ -24,14 +24,27 @@ import {
   IonProgressBar,
 } from "@ionic/react";
 
+import { FileChooser, FileChooserOriginal } from "@ionic-native/file-chooser";
+
 import "./MessageCenter.scss";
 
 import iconBack from "../../images/icon-back.png";
 import imgUpload from "../../images/icon-upload.png";
 import iconCloud from "../../images/icon-cloudupload.png";
 import iconCancel from "../../images/icon-cancel.png";
+import { url } from "inspector";
+import { debug } from "console";
 
 const MessageCenter: React.FC = () => {
+  const [image, setImage] = useState("");
+
+  const openFile = async () => {
+    const data = await FileChooser.open();
+    setImage(data);
+    console.log("a: ", data);
+    console.debug(123);
+  };
+
   return (
     <IonPage className="appointment">
       <IonHeader className="ion-no-border appointment__header">
@@ -52,12 +65,16 @@ const MessageCenter: React.FC = () => {
           <IonText className="mypicture__title">Upload Picture</IonText>
           <IonList className="mypicture__draglist">
             <IonImg className="img img--upload" src={imgUpload} alt="" />
-            <IonText className="mypicture__desc">
-              Drag files here or{" "}
-              <IonRouterLink className="color color--blue">
+            <IonImg src={image} alt="" />
+            <IonList className="mypicture__browser">
+              <IonText className="mypicture__desc">Drag files here or </IonText>
+              <IonButton
+                onClick={openFile}
+                className="btn btn--browse color color--blue"
+              >
                 browse
-              </IonRouterLink>
-            </IonText>
+              </IonButton>
+            </IonList>
           </IonList>
           <IonList className="ion-no-padding">
             <IonText className="mypicture__title">

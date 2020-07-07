@@ -29,17 +29,32 @@ const Home: React.FC = () => {
       <IonContent>
         <div className="home">
           <IonHeader className="ion-no-border home__header">
-            <IonTitle className="ion-text-center home__title-header">
-              Home
-            </IonTitle>
-            <IonList className="home__noti">
-              <IonImg
-                className="icon icon--noti"
-                src={iconNotification}
-                alt=""
-              />
-              <IonLabel className="home__label">1</IonLabel>
-            </IonList>
+            <IonToolbar className="home__toolbar">
+              <IonTitle className="ion-text-center home__title-header">
+                Home
+              </IonTitle>
+              <IonList className="home__noti">
+                <IonRouterLink>
+                  <IonImg
+                    className="icon icon--noti"
+                    src={iconNotification}
+                    alt=""
+                  />
+                  <IonLabel className="home__label">1</IonLabel>
+                </IonRouterLink>
+              </IonList>
+              {/* <IonButton
+                className="btn btn--search ion-no-padding"
+                slot="end"
+                // onClick={() => setShowPopover(true)}
+              >
+                <IonImg
+                  className="icon icon--popover"
+                  src={iconDotBlue}
+                  alt=""
+                />
+              </IonButton> */}
+            </IonToolbar>
           </IonHeader>
 
           <IonList className="home__list">

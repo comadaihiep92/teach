@@ -23,7 +23,7 @@ import {
   IonRouterLink,
   IonProgressBar,
 } from "@ionic/react";
-
+import { FileChooser, FileChooserOriginal } from "@ionic-native/file-chooser";
 import "./MyPicture.scss";
 
 import iconBack from "../../images/icon-back.png";
@@ -34,6 +34,13 @@ import iconCancel from "../../images/icon-cancel.png";
 const MyPicture: React.FC = () => {
   const [week, setWeek] = useState(["Week 1"]);
   const [day, setDay] = useState(["Monday"]);
+  const [image, setImage] = useState("");
+  const openFile = async () => {
+    const data = await FileChooser.open();
+    setImage(data);
+    console.log("a: ", data);
+    console.debug(123);
+  };
 
   return (
     <IonPage className="appointment">
@@ -53,12 +60,15 @@ const MyPicture: React.FC = () => {
           <IonText className="mypicture__title">Upload Picture</IonText>
           <IonList className="mypicture__draglist">
             <IonImg className="img img--upload" src={imgUpload} alt="" />
-            <IonText className="mypicture__desc">
-              Drag files here or{" "}
-              <IonRouterLink className="color color--blue">
+            <IonList className="mypicture__browser">
+              <IonText className="mypicture__desc">Drag files here or </IonText>
+              <IonButton
+                onClick={openFile}
+                className="btn btn--browse color color--blue"
+              >
                 browse
-              </IonRouterLink>
-            </IonText>
+              </IonButton>
+            </IonList>
           </IonList>
           <IonList className="mypicture__list ion-no-padding">
             <IonList className="mypicture__item ion-no-padding">
